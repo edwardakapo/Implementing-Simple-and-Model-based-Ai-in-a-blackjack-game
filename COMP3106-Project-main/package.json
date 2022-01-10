@@ -1,0 +1,24 @@
+{
+  "name": "Blackjack",
+  "version": "0.0.1",
+  "author": "",
+  "description": "",
+  "main": "./server.js",
+  "keywords": [],
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "selenium-webdriver": "^4.0.0",
+    "socket.io": "0.9.x",
+    "start-server-and-test": "^1.14.0"
+  },
+  "noAnalyze": true,
+  "engines": {
+    "node": ">=0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha tests/*.js"
+  },
+  "optionalDependencies": {}
+}

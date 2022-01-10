@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Blackjack</title>
+        <link rel="stylesheet" type="text/css" href="css/blackjack.css"></link>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="scripts/blackjack.client.js"></script>
+    </head>
+    <body>
+        <h1 class="mainH1">Blackjack</h1>
+        <div class="circleCtr">
+            <div class="circleBase type2">
+                <div class="innerCircle innerCircleX">
+                    <h1>Dealer</h1>
+                    <div id="dealerCards"></div>
+                    <div id="dealerCardsVisible"></div>
+                    <div id="dealerScore"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="circleCtr">
+            <div class="circleBase type1">
+                <div class="innerCircle innerCircleZ">
+                    <h1>Player 1</h1>
+                    <h3 id="player1Money"></h3>
+                    <div id="player1Bet"></div>
+
+
+                    <div id="player1Cards"></div>
+                    <div id="player1CardsVisible"></div>
+                    <div id="player1Score"></div>
+                    <div id="result"></div>
+                    <button id="deal">Deal</button>
+                    <button id="hit">Hit</button>
+                    <button id="stand">Stand</button>
+
+                    <div class="betForm1"> 
+                        <h3>Bet Amount:</h3>
+                        <input type="text" id="bet1box" name="bet1box">
+                        <button id="bet1">Bet</button>
+                    </div>
+
+                </div>
+            </div>
+    
+            <div class="circleBase type1">
+                <div class="innerCircle innerCircleZ">
+                    <h1>Player 2</h1>
+                    <h3 id="player2Money"></h3>
+                    <div id="player2Bet"></div>
+
+                    <div id="player2Cards"></div>
+                    <div id="player2CardsVisible"></div>
+                    <div id="player2Score"></div>
+                    <div id="result2"></div>
+                    <button id="deal2">Deal</button>
+                    <button id="hit2">Hit</button>
+                    <button id="stand2">Stand</button>
+
+                    <div class="betForm2"> 
+                        <h3>Bet Amount:</h3>
+                        <input type="text" id="bet2box" name="bet2box">
+                        <button id="bet2">Bet</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="circleCtr">
+            <div class="circleBase type1">
+                <div class="innerCircle innerCircleX">
+                    <h1>Basic AI</h1>
+                    <h3 id="aiMoney"></h3>
+                    <div id="aiBet"></div>
+                    <div id="aiCards"></div>
+                    <div id="aiCardsVisible"></div>
+                    <div id="aiScore"></div>
+                    <div id="aiResult"></div>
+                </div>
+            </div>
+
+            <div class="circleBase type1">
+                <div class="innerCircle innerCircleX">
+                    <h1>Model AI</h1>
+                    <h3 id="modelAiMoney"></h3>
+                    <div id="modelAiBet"></div>
+                    <div id="modelAiCards"></div>
+                    <div id="modelAiCardsVisible"></div>
+                    <div id="modelAiScore"></div>
+                    <div id="modelAiResult"></div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

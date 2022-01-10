@@ -1,0 +1,200 @@
+body {
+    text-align: center;
+    margin: 5px;
+    background-color: #0099E6;
+    color: White;
+    white-space: nowrap;
+}
+
+h1 {
+    margin: 0;
+}
+
+.mainH1 {
+    margin-bottom: 1em;
+    display: inline-block;
+    border-radius: 25px;
+    border: 0.1em solid #FFFFFF;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+button:enabled {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    background-color: #0099E6;
+    font-size: large;
+
+}
+
+button:disabled {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid lightgray;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:darkgray;
+    text-align:center;
+    transition: all 0.2s;
+    background-color: #0099E6;
+    font-size: large;
+
+}
+
+button:enabled:hover {
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+@media all and (max-width:30em){
+    button{
+        display:block;
+        margin:0.4em auto;
+    }
+}
+
+#dealerScore {
+    min-height:  20px;
+}
+
+#dealerCards {
+    min-height: 20px;
+}
+
+#playerCards {
+    min-height: 60px;
+}
+
+#aiCards {
+    min-height: 20px;
+}
+
+#modelAiCards {
+    min-height: 20px;
+}
+
+#playerScore {
+    min-height: 20px;
+}
+
+#result {
+    min-height: 20px;
+    margin-bottom: 10px;
+}
+
+#result2 {
+    min-height: 20px;
+    margin-bottom: 10px;
+}
+
+img.card {
+    height: 12px;
+    width: 12px;
+}
+
+.circleBase {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+
+.circleCtr {
+    display: flex;                  /* establish flex container */
+    flex-direction: row;            /* default value; can be omitted */
+    flex-wrap: nowrap;              /* default value; can be omitted */
+    justify-content: center; /* switched from default (flex-start, see below) */
+    padding-bottom: 1em;
+}
+
+.circleCtr > div {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+.innerCircleX {
+    margin-top: 30%;
+}
+
+.innerCircleZ {
+    margin-top: 10%;
+}
+
+.innerCircle > div {
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    font-size: large;
+}
+
+.innerCircle > h1 {
+    padding-bottom: 0.2em;
+}
+
+.type1 {
+    background: #52b9ec;
+    border: 3px solid white;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(95, 95, 95);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(95, 95, 95);
+    box-shadow: 2px 2px 5px 0px rgb(95, 95, 95);
+}
+
+.type2 {
+    background: #247aa5;
+    border: 3px solid white;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(95, 95, 95);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(95, 95, 95);
+    box-shadow: 2px 2px 5px 0px rgb(95, 95, 95);
+}
+
+.typeActive {
+    background: #52b9ec;
+    border: 3px solid rgb(115, 218, 19);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(95, 95, 95);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(95, 95, 95);
+    box-shadow: 2px 2px 5px 0px rgb(95, 95, 95);
+}
+
+.typeActive > div > h1 {
+    color: rgb(115, 218, 19);
+}
+
+.betForm1 {
+    margin-top: 5%;
+}
+
+.betForm2 {
+    margin-top: 5%;
+}
+
+input {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    background-color: #0099E6;
+    font-size: large;
+}
